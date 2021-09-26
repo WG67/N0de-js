@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>The .includes() method</h1>
+
+
+<button onclick="document.getElementById('result').innerHTML = myFunction('Chocolate biscuit','biscuit')">Is biscuit a substring of chocolate biscuit?</button>
+
+
+<p id="result"></p>
+
+<script>
+function myFunction(a,b) {
+
+returnString="Nothing";
+
+if (a.includes(b)){
+
+	returnString = b + " " + a;
+	alert("Yes!");
+}
+else
+{
+	returnString = a + " " + b;
+}
+
+
+return returnString;
+
+}
+</script>
+
+</body>
+</html>
