@@ -6,7 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    This is HtmlElement
-</body>
+<style>
+body {background-color: powderblue;}
+h1   {color: blue;}
+</style>
+  <h1 id="demo"></h1>
+<script>
+var name = window.prompt("Enter your name: ");
+document.getElementById("demo").innerHTML = name;
+</script>
+
 </html>
+
